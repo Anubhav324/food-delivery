@@ -46,7 +46,7 @@ const getCart=async(req,res)=>{
     try {
         let userData=await userModel.findById(req.body.userId);
         //console.log(req.body.userId);
-        console.log("getCart called at:", new Date().toISOString());
+        //console.log("getCart called at:", new Date().toISOString());
         
         let cartData=await userData.cartData;
         res.json({success:true,cartData})

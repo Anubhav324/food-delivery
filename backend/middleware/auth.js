@@ -13,7 +13,7 @@ const authMiddleWare= async(req,res,next)=>{
         //console.log(token_decode);
         
         req.body.userId=token_decode.id;
-        //console.log(req.body);
+        //console.log(req.body.userId);
         next();
     } catch (error) {
         console.log(error);
