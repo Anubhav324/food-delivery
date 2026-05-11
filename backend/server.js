@@ -12,7 +12,7 @@ import orderRouter from './routes/orderRoute.js'
 //app config
 
 const app=express()
-const port=5000
+const port=process.env.PORT||5000
 
 
 
@@ -38,5 +38,3 @@ app.get("/",(req,res)=>{
 app.listen(port,()=>{
     console.log(`Server strted on http://localhost:${port}`)
 })
-//anubhav1234
-//mongodb+srv://fooddelivery:@cluster0.h2fqfmg.mongodb.net/?
