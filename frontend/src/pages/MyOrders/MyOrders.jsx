@@ -47,7 +47,7 @@ function MyOrders() {
                             Items:{order.items.length}
                         </p>
                         <p><span>&#x25cf;</span><b>{order.status}</b></p>
-                        <button>Track your order</button>
+                        <button onClick={fetchOrders}>Track your order</button>
                     </div>
                 )
             })}
